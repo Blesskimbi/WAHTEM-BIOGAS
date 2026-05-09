@@ -17,14 +17,14 @@ export default function Portfolio() {
     : PROJECTS.filter(p => p.category === filter);
 
   return (
-    <section id="portfolio" className="py-24 px-6 md:px-12 lg:px-24 bg-brand-surface">
+    <section id="portfolio" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-brand-surface">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
             <span className="text-brand-forest font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
               {t({ en: 'Our Projects', fr: 'Nos Projets' })}
             </span>
-            <h2 className="text-5xl md:text-6xl font-display font-bold text-brand-deep tracking-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-deep tracking-tight">
               {t({ en: 'Case Studies of Bio-Innovation', fr: 'Études de Cas de Bio-Innovation' })}
             </h2>
           </div>
@@ -35,7 +35,7 @@ export default function Portfolio() {
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={cn(
-                  "px-6 py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all",
+                  "px-4 md:px-6 py-2.5 md:py-3 rounded-xl text-[10px] font-bold uppercase tracking-widest transition-all",
                   filter === cat 
                     ? "bg-brand-forest text-white shadow-xl shadow-brand-forest/20" 
                     : "bg-white text-brand-forest border border-slate-200 hover:border-brand-lime"

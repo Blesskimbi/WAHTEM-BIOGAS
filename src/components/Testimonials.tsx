@@ -55,7 +55,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.1 }}
-              className="bg-white p-10 rounded-[32px] shadow-sm relative group hover:shadow-xl transition-all"
+              className="bg-white p-8 md:p-10 rounded-[2rem] shadow-sm relative group hover:shadow-xl transition-all"
             >
               <Quote className="absolute top-8 right-8 w-12 h-12 text-brand-lime/10 group-hover:text-brand-lime/20 transition-colors" />
               

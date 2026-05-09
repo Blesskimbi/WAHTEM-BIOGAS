@@ -9,7 +9,7 @@ export default function Services() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-24 px-6 md:px-12 lg:px-24 bg-white relative">
+    <section id="services" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-white relative">
       <div className="max-w-7xl mx-auto">
         <div className="mb-20">
           <motion.div
@@ -22,7 +22,7 @@ export default function Services() {
               <span className="text-brand-forest font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
                 {t({ en: 'Advanced Engineering', fr: 'Ingénierie Avancée' })}
               </span>
-              <h2 className="text-5xl md:text-6xl font-display font-bold text-brand-deep tracking-tight">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-deep tracking-tight">
                 {t({ en: 'Bio-Tech Solutions for Modern Africa', fr: 'Solutions Bio-Tech pour l\'Afrique Moderne' })}
               </h2>
             </div>
@@ -35,7 +35,7 @@ export default function Services() {
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1px bg-slate-100 border border-slate-100 rounded-[2.5rem] overflow-hidden shadow-2xl">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-1px bg-slate-100 border border-slate-100 rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-2xl">
           {SERVICES.map((service, index) => {
             const Icon = (Icons as any)[service.icon];
             return (
@@ -45,7 +45,7 @@ export default function Services() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="group relative bg-white p-12 hover:bg-brand-forest transition-all duration-500"
+                className="group relative bg-white p-8 md:p-12 hover:bg-brand-forest transition-all duration-500"
               >
                 <div className="relative z-10">
                   <div className="w-16 h-16 bg-brand-lime/10 text-brand-forest rounded-2xl flex items-center justify-center mb-8 group-hover:bg-brand-lime group-hover:scale-110 transition-all duration-500">

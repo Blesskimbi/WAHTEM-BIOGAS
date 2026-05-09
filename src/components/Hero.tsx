@@ -47,7 +47,7 @@ export default function Hero() {
               {t({ en: "Cameroon's Green Engineering Pioneer", fr: "Pionnier de l'ingenierie verte au Cameroun" })}
             </div>
 
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-display font-bold leading-[1.05] mb-6 tracking-tight max-w-3xl text-white">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[5.5rem] font-display font-bold leading-[1.1] mb-6 tracking-tight max-w-3xl text-white">
               {t({ en: 'Turning Waste', fr: 'Transformer Les Déchets' })} <br />
               {t({ en: 'Into', fr: 'En' })} <span className="text-brand-lime">{t({ en: 'Energy', fr: 'Énergie' })}</span> & <br />
               {t({ en: 'a Greener Future', fr: 'un Avenir Vert' })}
@@ -60,12 +60,12 @@ export default function Hero() {
               })}
             </p>
 
-            <div className="flex flex-row items-center justify-center lg:justify-start gap-3 mb-12">
-              <a href="#booking" className="px-5 py-3 sm:px-8 sm:py-4 bg-brand-lime text-brand-forest rounded-full font-semibold transition-all hover:scale-105 shadow-[0_0_40px_-10px_rgba(113,212,74,0.5)] flex items-center justify-center gap-2 text-sm sm:text-base">
+            <div className="flex flex-row flex-wrap items-center justify-center lg:justify-start gap-3 mb-10 w-full">
+              <a href="#booking" className="flex-1 min-w-[140px] px-4 py-3 sm:px-8 sm:py-4 bg-brand-lime text-brand-forest rounded-full font-semibold transition-all hover:scale-105 shadow-[0_0_40px_-10px_rgba(113,212,74,0.5)] flex items-center justify-center gap-2 text-xs sm:text-base">
                 {t({ en: 'Book Consultation', fr: 'Reserver' })}
-                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
               </a>
-              <a href="#portfolio" className="px-5 py-3 sm:px-8 sm:py-4 border border-white/20 bg-white/5 backdrop-blur-sm rounded-full font-semibold transition-all hover:bg-white/10 flex items-center justify-center gap-2 text-sm sm:text-base">
+              <a href="#portfolio" className="flex-1 min-w-[140px] px-4 py-3 sm:px-8 sm:py-4 border border-white/20 bg-white/5 backdrop-blur-sm rounded-full font-semibold transition-all hover:bg-white/10 flex items-center justify-center gap-2 text-xs sm:text-base">
                 {t({ en: 'View Projects', fr: 'Projets' })}
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
               </a>
@@ -99,7 +99,7 @@ export default function Hero() {
               key={i}
               className="p-6 lg:p-8 text-center flex flex-col items-center justify-center gap-2 bg-[#0A1A12]"
             >
-              <span className="text-3xl md:text-5xl font-display font-bold leading-none text-white">{stat.value}</span>
+              <span className="text-2xl md:text-5xl font-display font-bold leading-none text-white">{stat.value}</span>
               <span className="text-[10px] uppercase font-bold tracking-widest text-white/65">{t(stat.label)}</span>
             </div>
           ))}

@@ -24,14 +24,14 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-6 left-0 right-0 z-50 transition-all duration-500 px-6">
-      <div className="max-w-7xl mx-auto flex items-center justify-between transition-all duration-500 px-8 py-3 bg-[#0A1A12]/80 backdrop-blur-xl rounded-full border border-[#1A3022] shadow-2xl">
-        <div className="flex items-center gap-2">
-          <div className="p-1.5 bg-brand-lime/10 rounded-lg">
-            <Leaf className="text-brand-lime w-6 h-6" />
+    <nav className="fixed top-4 md:top-6 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-6">
+      <div className="max-w-7xl mx-auto flex items-center justify-between transition-all duration-500 px-4 md:px-8 py-3 bg-[#0A1A12]/80 backdrop-blur-xl rounded-full border border-[#1A3022] shadow-2xl">
+        <div className="flex items-center gap-1.5 md:gap-2">
+          <div className="p-1 md:p-1.5 bg-brand-lime/10 rounded-lg">
+            <Leaf className="text-brand-lime w-5 h-5 md:w-6 md:h-6" />
           </div>
           <div className="flex flex-col -gap-1">
-            <span className="text-xl font-display font-bold uppercase tracking-wider text-white">
+            <span className="text-lg md:text-xl font-display font-bold uppercase tracking-wider text-white">
               Doni's Biofils
             </span>
           </div>

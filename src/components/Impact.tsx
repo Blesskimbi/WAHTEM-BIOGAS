@@ -46,7 +46,7 @@ export default function Impact() {
             <p className="text-brand-forest font-bold uppercase tracking-[0.2em] text-xs mb-4">
               {t({ en: 'Sustainability First', fr: 'La Durabilité D\'abord' })}
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 md:mb-8">
               {t({ en: 'Measurable Impact For A Greener Africa', fr: 'Impact Mesurable Pour Une Afrique Plus Verte' })}
             </h2>
             <p className="text-slate-600 mb-10 leading-relaxed">

@@ -33,17 +33,17 @@ export default function Booking() {
   };
 
   return (
-    <section id="booking" className="py-24 px-6 md:px-12 lg:px-24 bg-brand-surface relative overflow-hidden">
+    <section id="booking" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-brand-surface relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>
             <span className="text-brand-forest font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
               {t({ en: 'Work with the best', fr: 'Travailler avec les meilleurs' })}
             </span>
-            <h2 className="text-5xl md:text-6xl font-display font-bold text-brand-deep mb-8 tracking-tighter leading-[0.95]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-deep mb-6 md:mb-8 tracking-tighter leading-[1.05] md:leading-[0.95]">
               {t({ en: 'Secure Your Engineering Consultation', fr: 'Sécurisez Votre Consultation' })}
             </h2>
-            <p className="text-lg text-slate-600 mb-12 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 mb-10 md:mb-12 leading-relaxed">
               {t({ 
                 en: 'Our lead engineers review every project personally. Schedule a slots to discuss technical specifications, site readiness, and environmental impact assessments.', 
                 fr: 'Nos ingénieurs principaux examinent chaque projet personnellement.' 

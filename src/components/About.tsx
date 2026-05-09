@@ -15,7 +15,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 px-6 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <section id="about" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <motion.div
@@ -40,7 +40,7 @@ export default function About() {
             <motion.div 
                animate={{ y: [0, 15, 0] }}
                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -bottom-10 -right-10 w-64 h-64 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl z-20"
+               className="absolute -bottom-4 -right-4 w-40 h-40 md:-bottom-10 md:-right-10 md:w-64 md:h-64 rounded-2xl md:rounded-[2.5rem] overflow-hidden border-4 md:border-8 border-white shadow-2xl z-20"
             >
                 <img 
                   src="/images/biofil-2.jpg" 
@@ -63,13 +63,13 @@ export default function About() {
             <span className="text-brand-forest font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
               {t({ en: 'Rooted in Africa, Built for the World', fr: 'Ancré en Afrique, Conçu pour le Monde' })}
             </span>
-            <h2 className="text-5xl md:text-6xl font-display font-bold text-brand-deep mb-8 tracking-tighter leading-[0.95]">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-brand-deep mb-6 md:mb-8 tracking-tighter leading-[1.05] md:leading-[0.95]">
               {t({ 
                 en: 'Engineering Excellence at Every Depth', 
                 fr: 'Excellence en Ingénierie à Chaque Profondeur' 
               })}
             </h2>
-            <p className="text-lg text-slate-600 mb-10 leading-relaxed">
+            <p className="text-base md:text-lg text-slate-600 mb-10 leading-relaxed">
               {t({ 
                 en: "Doni's Biofils is more than a service provider; we are your partners in ecological transition. From our base at Up Station, Bamenda to projects across Cameroon, our engineers are on the ground, ensuring every biodigester meets the highest professional standards.", 
                 fr: "Doni's Biofils est plus qu'un prestataire de services ; nous sommes vos partenaires dans la transition écologique. De notre base à Up Station, Bamenda aux projets à travers le Cameroun, nos ingénieurs sont sur le terrain." 
@@ -87,7 +87,7 @@ export default function About() {
               ))}
             </div>
 
-            <div className="p-8 bg-brand-forest rounded-[2.5rem] text-white flex items-center justify-between shadow-xl shadow-brand-forest/20">
+            <div className="p-6 md:p-8 bg-brand-forest rounded-2xl md:rounded-[2.5rem] text-white flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl shadow-brand-forest/20">
                <div className="flex -space-x-3">
                  {[1,2,3,4].map(i => (
                     <div key={i} className="w-12 h-12 rounded-full border-4 border-brand-forest bg-slate-200 overflow-hidden">
@@ -95,9 +95,9 @@ export default function About() {
                     </div>
                  ))}
                </div>
-               <div className="text-right">
-                  <p className="text-2xl font-display font-bold text-brand-lime">100% Safety</p>
-                  <p className="text-[10px] font-bold uppercase tracking-widest opacity-60">Professional Compliance</p>
+               <div className="text-center sm:text-right">
+                  <p className="text-xl md:text-2xl font-display font-bold text-brand-lime">100% Safety</p>
+                  <p className="text-[9px] md:text-[10px] font-bold uppercase tracking-widest opacity-60">Professional Compliance</p>
                </div>
             </div>
           </motion.div>
