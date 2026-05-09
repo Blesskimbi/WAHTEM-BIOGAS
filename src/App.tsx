@@ -14,7 +14,6 @@ import Impact from './components/Impact';
 import Testimonials from './components/Testimonials';
 import Booking from './components/Booking';
 import CTASection from './components/CTASection';
-import Chatbot from './components/Chatbot';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -34,7 +33,6 @@ export default function App() {
           <Booking />
         </main>
 
-        <Chatbot />
         <Footer />
       </div>
     </LanguageProvider>
