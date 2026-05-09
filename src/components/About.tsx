@@ -27,12 +27,12 @@ export default function About() {
           >
             {/* Main Construction Photo */}
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50 aspect-[4/5]">
-               <img 
-                 src="https://images.unsplash.com/photo-1581094281212-d19338ad7621?auto=format&fit=crop&q=80&w=800" 
-                 alt="Professional Engineering on Site" 
-                 className="w-full h-full object-cover"
-                 referrerPolicy="no-referrer"
-               />
+                <img 
+                  src="/images/biofil-1.jpg" 
+                  alt="Professional Biofil Installation" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/40 to-transparent" />
             </div>
 
@@ -42,12 +42,12 @@ export default function About() {
                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                className="absolute -bottom-10 -right-10 w-64 h-64 rounded-[2.5rem] overflow-hidden border-8 border-white shadow-2xl z-20"
             >
-               <img 
-                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" 
-                 alt="Team in action" 
-                 className="w-full h-full object-cover"
-                 referrerPolicy="no-referrer"
-               />
+                <img 
+                  src="/images/biofil-2.jpg" 
+                  alt="Team in action" 
+                  className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
+                />
             </motion.div>
 
             {/* Decorative background shape */}
@@ -71,8 +71,8 @@ export default function About() {
             </h2>
             <p className="text-lg text-slate-600 mb-10 leading-relaxed">
               {t({ 
-                en: 'WAHTEM is more than a service provider; we are your partners in ecological transition. From the rural farms of Bafoussam to the industrial hubs of Douala, our engineers are on the ground, ensuring every biodigester and epoxy floor meets the highest professional standards.', 
-                fr: 'WAHTEM est plus qu\'un prestataire de services ; nous sommes vos partenaires dans la transition écologique.' 
+                en: "Doni's Biofils is more than a service provider; we are your partners in ecological transition. From our base at Up Station, Bamenda to projects across Cameroon, our engineers are on the ground, ensuring every biodigester meets the highest professional standards.", 
+                fr: "Doni's Biofils est plus qu'un prestataire de services ; nous sommes vos partenaires dans la transition écologique. De notre base à Up Station, Bamenda aux projets à travers le Cameroun, nos ingénieurs sont sur le terrain." 
               })}
             </p>
 

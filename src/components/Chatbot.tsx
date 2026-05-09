@@ -10,7 +10,7 @@ export default function Chatbot() {
   const { language, t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'bot'; content: string }[]>([
-    { role: 'bot', content: 'Hello! I am your WAHTEM AI assistant. How can I help you with your biodigester or engineering project today?' }
+    { role: 'bot', content: "Hello! I am your Doni's Biofils AI assistant. How can I help you with your biodigester or engineering project today?" }
   ]);
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -35,24 +35,24 @@ export default function Chatbot() {
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
         contents: [
-          { role: 'user', parts: [{ text: `You are WAHTEM AI, a consultant for WAHTEM EPOXY & BIOTECH ENGINEERING, an engineering firm in Cameroon.
-          Expertise: Biodigesters, Biogas, Waste management, Epoxy flooring, Biotech engineering.
+          { role: 'user', parts: [{ text: `You are Doni's Biofils AI, a consultant for Doni's Biofils, an engineering firm in Cameroon.
+          Expertise: Biodigesters, Biogas, Waste management, Biofil toilets, Biotech engineering.
           Tone: Professional, helpful, expert, African branding.
-          Location: Based in Cameroon, servicing Africa.
+          Location: Based in Up Station, Bamenda, Cameroon, servicing Africa.
           Current Language: ${language}.
-          Contact: +237 6 77 54 22 40, fwahtem@gmail.com.
+          Contact: +237 6 73 01 86 29, fwahtem@gmail.com.
           Answer this user query accurately: ${userMessage}` }] }
         ],
         config: {
-          systemInstruction: "You are a professional assistant for WAHTEM engineering. Be concise and technical but approachable. Always mention that a consultation can be booked on the website if relevant."
+          systemInstruction: "You are a professional assistant for Doni's Biofils engineering. Be concise and technical but approachable. Always mention that a consultation can be booked on the website if relevant."
         }
       });
 
-      const botContent = response.text || "I'm sorry, I encountered an error. Please contact us directly at +237 6 77 54 22 40.";
+      const botContent = response.text || "I'm sorry, I encountered an error. Please contact us directly at +237 6 73 01 86 29.";
       setMessages(prev => [...prev, { role: 'bot', content: botContent }]);
     } catch (error) {
       console.error(error);
-      setMessages(prev => [...prev, { role: 'bot', content: "Our AI is currently undergoing maintenance. Please reach out via WhatsApp at +237 6 77 54 22 40 for immediate assistance." }]);
+      setMessages(prev => [...prev, { role: 'bot', content: "Our AI is currently undergoing maintenance. Please reach out via WhatsApp at +237 6 73 01 86 29 for immediate assistance." }]);
     } finally {
       setIsTyping(false);
     }
@@ -75,7 +75,7 @@ export default function Chatbot() {
                   <Bot className="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 className="font-bold">WAHTEM Assistant</h4>
+                  <h4 className="font-bold">Doni's Biofils Assistant</h4>
                   <p className="text-[10px] opacity-70 tracking-widest uppercase">AI Engineering Agent</p>
                 </div>
               </div>

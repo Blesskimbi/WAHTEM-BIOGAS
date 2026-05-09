@@ -11,8 +11,8 @@ export default function Testimonials() {
       name: 'Nkwain Festus',
       role: 'Farm Manager, Bafoussam',
       content: { 
-        en: 'The biodigester installed by WAHTEM has halved our energy costs. Their technical team is extremely professional and responsive.', 
-        fr: 'Le biodigesteur installé par WAHTEM a réduit de moitié nos coûts énergétiques. Leur équipe technique est extrêmement professionnelle.' 
+        en: "The biodigester installed by Doni's Biofils has halved our energy costs. Their technical team is extremely professional and responsive.", 
+        fr: "Le biodigesteur installé par Doni's Biofils a réduit de moitié nos coûts énergétiques. Leur équipe technique est extrêmement professionnelle." 
       },
       rating: 5
     },

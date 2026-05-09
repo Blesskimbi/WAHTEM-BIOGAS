@@ -22,7 +22,7 @@ export default function App() {
     <LanguageProvider>
       <div className="min-h-screen bg-brand-surface selection:bg-brand-lime selection:text-brand-forest">
         <Navbar />
-        
+
         <main>
           <Hero />
           <About />

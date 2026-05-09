@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-2">
               <Leaf className="text-brand-lime w-8 h-8" />
               <div className="flex flex-col">
-                <span className="text-xl font-display font-bold uppercase tracking-wider">WAHTEM</span>
-                <span className="text-[8px] font-medium uppercase tracking-[0.2em] opacity-70">Epoxy & Biotech</span>
+                <span className="text-xl font-display font-bold uppercase tracking-wider">Doni's Biofils</span>
+                <span className="text-[8px] font-medium uppercase tracking-[0.2em] opacity-70">Biofils & Biogas</span>
               </div>
             </div>
             <p className="text-sm text-white/60 leading-relaxed">
@@ -24,7 +24,7 @@ export default function Footer() {
               })}
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://www.facebook.com/profile.php?id=61566252995267#" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-lime hover:text-brand-forest transition-all">
+              <a href="https://www.facebook.com/people/Donis-Biofil/61573592046536/" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-lime hover:text-brand-forest transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/wahtem10/" className="w-10 h-10 rounded-full glass flex items-center justify-center hover:bg-brand-lime hover:text-brand-forest transition-all">
@@ -63,18 +63,18 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-brand-lime flex-shrink-0 mt-1" />
-                <span>Bamenda / Douala, Cameroon</span>
+                <span>up station, Bamenda, Cameroon</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-brand-lime" />
-                <span>+237 6 77 54 22 40</span>
+                <span>+237 6 73 01 86 29</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-lime" />
                 <span>fwahtem@gmail.com</span>
               </li>
               <li className="pt-4">
-                <a href="https://wa.me/237677542240" className="flex items-center gap-2 text-brand-lime font-bold">
+                <a href="https://wa.me/237673018629" className="flex items-center gap-2 text-brand-lime font-bold">
                   <MessageSquare className="w-4 h-4" />
                    {t({ en: 'Chat on WhatsApp', fr: 'Discuter sur WhatsApp' })}
                 </a>
@@ -85,7 +85,7 @@ export default function Footer() {
 
         <div className="border-t border-white/10 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-xs text-white/40">
-            © 2026 WAHTEM EPOXY & BIOTECH ENGINEERING. All Rights Reserved.
+            © 2026 Doni's Biofils. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-xs text-white/40 uppercase tracking-widest font-bold">
             <a href="#" className="hover:text-white">Privacy Policy</a>

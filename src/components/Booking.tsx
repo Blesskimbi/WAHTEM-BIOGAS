@@ -28,7 +28,7 @@ export default function Booking() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setStep(3);
-    const whatsappUrl = `https://wa.me/237677542240?text=Hello WAHTEM Engineering. I'd like to book a ${formData.service} consultation for ${date.toDateString()}. Client: ${formData.name}`;
+    const whatsappUrl = `https://wa.me/237673018629?text=Hello Doni's Biofils. I'd like to book a ${formData.service} consultation for ${date.toDateString()}. Client: ${formData.name}`;
     setTimeout(() => window.open(whatsappUrl, '_blank'), 2000);
   };
 

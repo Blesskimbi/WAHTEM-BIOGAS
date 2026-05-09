@@ -9,7 +9,7 @@ export const SERVICES: Service[] = [
       fr: 'Systèmes de transformation des déchets en énergie haute performance pour les maisons, les fermes et les industries au Cameroun.'
     },
     icon: 'Leaf',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800'
+    image: '/images/biofil-1.jpg'
   },
   {
     id: 'biogas',
@@ -19,7 +19,7 @@ export const SERVICES: Service[] = [
       fr: 'Solutions d\'énergie renouvelable fournissant du gaz de cuisson propre et de l\'électricité.'
     },
     icon: 'Flame',
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=800'
+    image: '/images/biofil-2.jpg'
   },
   {
     id: 'epoxy',
@@ -68,23 +68,23 @@ export const PROJECTS: Project[] = [
     id: '1',
     title: { en: 'Industrial Biodigester Construction', fr: 'Construction de Biodigesteur Industriel' },
     category: 'Industrial',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=800',
-    description: { en: 'Large scale waste-to-energy plant under construction.', fr: 'Usine de transformation des déchets en énergie à grande échelle.' }
+    image: '/images/biofil-3.jpg',
+    description: { en: 'Biofil installation in progress.', fr: 'Installation de biofil en cours.' }
   },
   {
     id: '2',
     title: { en: 'High-Gloss Industrial Epoxy', fr: 'Époxy Industriel Haute Brillance' },
     category: 'Industrial',
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&q=80&w=800',
-    description: { en: 'Premium warehouse flooring solution.', fr: 'Revêtement de sol pour entrepôt haut de gamme.' }
+    image: '/images/biofil-4.jpg',
+    description: { en: 'Bio-toilet construction site.', fr: 'Chantier de construction de bio-toilettes.' }
   },
   {
     id: '3',
     title: { en: 'Farm-Scale Biogas Plant', fr: 'Usine de Biogaz à l\'Échelle de la Ferme' },
     category: 'Farms',
-    image: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800',
-    description: { en: 'Sustainable energy for livestock farm.', fr: 'Énergie durable pour une ferme d\'élevage.' }
-  }
+    image: '/images/biofil-5.jpg',
+    description: { en: 'Sustainable bio-toilet solution.', fr: 'Solution de bio-toilette durable.' }
+  },
 ];
 
 export const STATS: Stat[] = [
