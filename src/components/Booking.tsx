@@ -35,7 +35,7 @@ export default function Booking() {
   return (
     <section id="booking" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-brand-surface relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
             <span className="text-brand-forest font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">
               {t({ en: 'Work with the best', fr: 'Travailler avec les meilleurs' })}
@@ -72,27 +72,29 @@ export default function Booking() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="bg-white p-10 rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(4,65,48,0.15)] border border-slate-100 relative"
+            className="bg-white p-4 sm:p-6 md:p-10 rounded-[2rem] md:rounded-[3rem] shadow-[0_50px_100px_-20px_rgba(4,65,48,0.15)] border border-slate-100 relative"
           >
             {step === 1 && (
               <div className="space-y-8">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-2xl font-bold flex items-center gap-3">
-                    <span className="w-10 h-10 rounded-full bg-brand-forest text-white text-xs flex items-center justify-center font-mono">STEP_01</span>
+                  <h3 className="text-xl md:text-2xl font-bold flex items-center gap-3">
+                    <span className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-brand-forest text-white text-[10px] md:text-xs flex items-center justify-center font-mono">STEP_01</span>
                     {t({ en: 'Timeline Selection', fr: 'Sélection du Calendrier' })}
                   </h3>
                 </div>
-                <div className="p-6 bg-slate-50 rounded-[2rem] shadow-inner flex justify-center">
-                  <Calendar 
-                    onChange={setDate} 
-                    value={date} 
-                    className="border-none rounded-2xl w-full bg-transparent font-sans"
-                    minDate={new Date()}
-                  />
+                <div className="-mx-2 sm:mx-0 p-2 sm:p-4 md:p-6 bg-slate-50 rounded-2xl md:rounded-[2rem] shadow-inner w-[calc(100%+16px)] sm:w-full overflow-x-auto">
+                  <div className="min-w-[260px] w-full">
+                    <Calendar 
+                      onChange={setDate} 
+                      value={date} 
+                      className="border-none w-full bg-transparent font-sans !text-xs sm:!text-sm"
+                      minDate={new Date()}
+                    />
+                  </div>
                 </div>
                 <button 
                   onClick={() => setStep(2)}
-                  className="w-full py-5 bg-brand-forest text-white rounded-full font-bold shadow-xl shadow-brand-forest/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3"
+                  className="w-full py-4 md:py-5 bg-brand-forest text-white rounded-full font-bold shadow-xl shadow-brand-forest/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3"
                 >
                   {t({ en: 'Confirm Date & Proceed', fr: 'Confirmer et Continuer' })}
                   <ArrowRight className="w-5 h-5" />
@@ -102,8 +104,8 @@ export default function Booking() {
 
             {step === 2 && (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <h3 className="text-2xl font-bold flex items-center gap-3">
-                   <span className="w-10 h-10 rounded-full bg-brand-forest text-white text-xs flex items-center justify-center font-mono">STEP_02</span>
+                <h3 className="text-xl md:text-2xl font-bold flex items-center gap-3">
+                   <span className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-brand-forest text-white text-[10px] md:text-xs flex items-center justify-center font-mono">STEP_02</span>
                    {t({ en: 'Project Protocol', fr: 'Protocole de Projet' })}
                 </h3>
                 
@@ -114,7 +116,7 @@ export default function Booking() {
                       required
                       type="text" 
                       placeholder="Engineer / Owner Name"
-                      className="w-full px-6 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all"
+                      className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-slate-50 rounded-xl sm:rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all text-sm sm:text-base"
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
                   </div>
@@ -124,7 +126,7 @@ export default function Booking() {
                       required
                       type="email" 
                       placeholder="contact@company.com"
-                      className="w-full px-6 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all"
+                      className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-slate-50 rounded-xl sm:rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all text-sm sm:text-base"
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
                   </div>
@@ -134,7 +136,7 @@ export default function Booking() {
                   <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-2">Engineering Segment</label>
                   <select 
                     required
-                    className="w-full px-6 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all appearance-none"
+                    className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-slate-50 rounded-xl sm:rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all text-sm sm:text-base"
                     onChange={(e) => setFormData({...formData, service: e.target.value})}
                   >
                     <option value="">Select Department...</option>
@@ -147,16 +149,16 @@ export default function Booking() {
                   <textarea 
                     rows={4}
                     placeholder="Briefly detail the site conditions and requirements..."
-                    className="w-full px-6 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all resize-none"
+                    className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-slate-50 rounded-xl sm:rounded-2xl border-none focus:ring-2 focus:ring-brand-lime outline-none transition-all resize-none text-sm sm:text-base"
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                   />
                 </div>
 
-                <div className="flex gap-4 pt-4">
-                  <button type="button" onClick={() => setStep(1)} className="px-8 py-4 border-2 border-slate-100 rounded-full font-bold text-slate-400 hover:text-brand-forest hover:border-brand-forest transition-all">Back</button>
-                  <button type="submit" className="flex-1 py-5 bg-brand-forest text-white rounded-full font-bold shadow-xl shadow-brand-forest/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
-                    <Send className="w-5 h-5" />
-                    {t({ en: 'Secure Consultation', fr: 'Sécuriser la Consultation' })}
+                <div className="flex flex-col-reverse sm:flex-row gap-3 pt-4 w-full">
+                  <button type="button" onClick={() => setStep(1)} className="w-full sm:w-auto px-6 md:px-8 py-4 border-2 border-slate-100 rounded-full font-bold text-slate-400 hover:text-brand-forest hover:border-brand-forest transition-all">Back</button>
+                  <button type="submit" className="w-full sm:flex-1 py-4 md:py-5 bg-brand-forest text-white rounded-full font-bold shadow-xl shadow-brand-forest/20 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                    <Send className="w-4 h-4 md:w-5 md:h-5" />
+                    <span className="text-sm md:text-base">{t({ en: 'Secure Consultation', fr: 'Sécuriser la Consultation' })}</span>
                   </button>
                 </div>
               </form>
